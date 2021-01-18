@@ -566,6 +566,9 @@ class TimeMapAlgorithm(_SearchAlgorithmBase):
                     else:
                         raise Exception("Unsupported aggregation operator")
 
+        if aggregate_geom.wkbType() == QgsWkbTypes.GeometryCollection:
+            aggregate_geom.convertGeometryCollectionToSubclass(QgsWkbTypes.MultiPolygon)
+
         if result_type != "NORMAL":
             feature = QgsFeature(output_fields)
             feature.setAttribute("id", result_type)

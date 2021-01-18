@@ -74,6 +74,7 @@ changelog=- 2019-02-12 : version 0.1-alpha
     - XXXX-XX-XX : version 1.3.3
         - fix : python exception in certain circumstances when changing active layer
         - fix : max field length prevents correct output
+        - fix : force intersection results to polygons
 
 tags=travel,time,platform,api,distance,matrix,geocoder,geocode,geocoding,isochrone,isochrones,routing,polygon,polygons,network analysis,shortest path
 homepage=https://qgis.traveltimeplatform.com/
